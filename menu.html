@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fimmion Foods - Food Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet"/>
+    <script src="main.js"></script>
+    <link rel="icon" type="image/png" href="img/foods/sweetroll.png"/>
+
+
+  </head>
+  <body class="menu-body">
+
+    <!--create an overall container for my page-->
+    <div class="container-fluid pt-3 text-black" id="main-body">
+
+        <!--Offer banner -->
+        <script>
+            document.writeln(OfferBanner());
+        </script>
+
+        <!--Create a header-->
+        <h1 class="header" style="text-align: center;">Fimmion's Menu</h1>
+        <p class="header" style="text-align: center;">Take a look at our delicious menu</p>
+
+        <!-- Navbar -->
+        <script>
+            document.writeln(Navbar());
+        </script>
+            
+        <!--food menu-->
+        <div class="menu">
+            <main class="menu">
+                <h1 class="menu">Fimmion Foods</h1>
+                <p class="established">Est. 3E 443</p>
+                <hr>
+                <section>
+                    <h2 class="menu">Starters</h2>
+                    <article class="menu-item">
+                        <p class="menu-flavor">Bosmer Bites</p><p class="menu-price"><script>document.writeln(GetPrice(7.25))</script></p>
+                    </article>
+                    <article class="menu-item">
+                        <p class="menu-flavor">Baked Ash Yams</p><p class="menu-price"><script>document.writeln(GetPrice(6.75))</script></p>
+                    </article>
+                    <article class="menu-item">
+                        <p class="menu-flavor">Redguard Rice</p><p class="menu-price"><script>document.writeln(GetPrice(4.49))</script></p>
+                    </article>
+                    <article class="menu-item">
+                        <p class="menu-flavor">Hot Mudcrab Dip</p><p class="menu-price"><script>document.writeln(GetPrice(8.99))</script></p>
+                    </article>
+                    <article class="menu-item">
+                        <p class="menu-flavor">Argonian Swamp Shrimp Boil</p><p class="menu-price"><script>document.writeln(GetPrice(10.25))</script></p>
+                    </article>
+                </section>
+                <section>
+                    <hr>
+                    <h2 class="menu">Mains</h2>
+                    <article class="menu-item">
+                        <p class="menu-flavor">Seared Nordic Barnacles</p><p class="menu-price"><script>document.writeln(GetPrice(23.75))</script></p>
+                    </article>
+                    <article class="menu-item">
+                        <p class="menu-flavor">Kwama Egg Quiche</p><p class="menu-price"><script>document.writeln(GetPrice(19.75))</script></p>
+                    </article>
+                    <article class="menu-item">
+                        <p class="menu-flavor">Juniper Lamb Chops</p><p class="menu-price"><script>document.writeln(GetPrice(25.49))</script></p>
+                    </article>
+                    <article class="menu-item">
+                        <p class="menu-flavor">Orsimer Venison</p><p class="menu-price"><script>document.writeln(GetPrice(27.99))</script></p>
+                    </article>
+                    <article class="menu-item">
+                        <p class="menu-flavor">Baked White River Salmon</p><p class="menu-price"><script>document.writeln(GetPrice(24.49))</script></p>
+                    </article>
+                </section>
+                <section>
+                    <hr>
+                    <h2 class="menu">Desserts</h2>
+                    <article class="menu-item">
+                        <p class="menu-dessert">Honey Nut Treat</p><p class="menu-price"><script>document.writeln(GetPrice(1.49))</script></p>
+                    </article>
+                    <article class="menu-item">
+                        <p class="menu-dessert">Sweetroll</p><p class="menu-price"><script>document.writeln(GetPrice(2.75))</script></p>
+                    </article>
+                    <article class="menu-item">
+                        <p class="menu-dessert">Sheogorath's Strawberry Tarts</p><p class="menu-price"><script>document.writeln(GetPrice(2.99))</script></p>
+                    </article>
+                    <article class="menu-item">
+                        <p class="menu-dessert">Birch Cookies</p><p class="menu-price"><script>document.writeln(GetPrice(2.49))</script></p>
+                    </article>
+                </section>
+                <section>
+                    <hr>
+                    <h2 class="menu">Drinks</h2>
+                    <article class="menu-item">
+                    <p class="menu-flavor">Black-Briar Mead</p><p class="menu-price"><script>document.writeln(GetPrice(5.75))</script></p>
+                    </article>
+                    <article class="menu-item">
+                    <p class="menu-flavor">Juniper Berry Mead</p><p class="menu-price"><script>document.writeln(GetPrice(4.75))</script></p>
+                    </article>
+                    <article class="menu-item">
+                    <p class="menu-flavor">Imperial Mulled Wine</p><p class="menu-price"><script>document.writeln(GetPrice(7.49))</script></p>
+                    </article>
+                    <article class="menu-item">
+                    <p class="menu-flavor">Canis Root Tea</p><p class="menu-price"><script>document.writeln(GetPrice(2.99))</script></p>
+                    </article>
+                    <article class="menu-item">
+                    <p class="menu-flavor">Skooma</p><p class="menu-price"><script>document.writeln(GetPrice(15.49))</script></p>
+                    </article>
+                </section>
+                <section>
+                    <hr>
+                    <h2 class="menu">Offers</h2>
+                    <article class="menu-item">
+                    <p class="menu-flavor">Monday</p><p class="menu-price"><script>document.writeln(GetOffer(false, "Monday"))</script></p>
+                    </article>
+                    <article class="menu-item">
+                    <p class="menu-flavor">Tuesday</p><p class="menu-price"><script>document.writeln(GetOffer(false, "Tuesday"))</script></p>
+                    </article>
+                    <article class="menu-item">
+                    <p class="menu-flavor">Wednesday</p><p class="menu-price"><script>document.writeln(GetOffer(false, "Wednesday"))</script></p>
+                    </article>
+                    <article class="menu-item">
+                    <p class="menu-flavor">Thursday</p><p class="menu-price"><script>document.writeln(GetOffer(false, "Thursday"))</script></p>
+                    </article>
+                    <article class="menu-item">
+                    <p class="menu-flavor">Friday</p><p class="menu-price"><script>document.writeln(GetOffer(false, "Friday"))</script></p>
+                    </article>
+                    <article class="menu-item">
+                    <p class="menu-flavor">Saturday</p><p class="menu-price"><script>document.writeln(GetOffer(false, "Saturday"))</script></p>
+                    </article>
+                    <article class="menu-item">
+                    <p class="menu-flavor">Sunday</p><p class="menu-price"><script>document.writeln(GetOffer(false, "Sunday"))</script></p>
+                    </article>
+                </section>
+        </main>
+        <hr class="bottom-line">
+        
+        </div>
+    </div>
+
+    <!--copyright footer-->
+    <div>
+      <script>
+        footer = copyrightFooter();
+        document.writeln(footer);
+      </script>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

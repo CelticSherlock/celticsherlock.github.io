@@ -1,0 +1,304 @@
+#main-body {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    text-align: center;
+    overflow: auto;
+    background-color: #151515;
+}
+
+.navbar{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    justify-self: center;
+    color:white;
+}
+
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item:focus .nav-link,
+.navbar-light .nav-item:hover .nav-link {
+        color: #151515;
+}
+
+.navbar-toggler{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+.wrap-founders{
+    width:auto;
+    height:500px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.founders img{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 250px;
+    height: 250px;;
+}
+
+.founders-img{
+    border-radius: 20%;
+    width:250px;
+    height:250px;
+}
+
+.founders-name{
+    font-weight:bold;
+    font-size:25px;
+}
+.carousel .carousel-item {
+    height: 500px;
+}
+  
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+    min-width: 500px;
+}
+
+.contact-container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.employment-list {
+    list-style-type: none;
+}
+
+.employment-details-header{
+    font-size:20px;
+}
+
+.job-desc-header{
+    font-size:20px;
+}
+
+.menu-container{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width:flex;
+    max-width:100px;
+    background-color: orange;
+    height:1000px;
+}
+
+.menu-container li{
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+
+.header{
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+.menu-body {
+    background-color: #151515;
+    font-family: sans-serif;
+}
+
+.menu h1 {
+font-size: 40px;
+margin-top: 0;
+margin-bottom: 15px;
+}
+
+.menu h2 {
+font-size: 30px;
+}
+
+.established {
+font-style: italic;
+}
+
+.menu h1, h2, p {
+text-align: center;
+}
+
+.menu {
+width: 80%;
+background-color:antiquewhite;
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+max-width: 800px;
+}
+
+.menu img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: -25px;
+}
+
+.menu i {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+
+.menu hr {
+height: 2px;
+background-color: brown;
+border-color: brown;
+}
+
+.bottom-line {
+margin-top: 25px;
+}
+
+.menu h1, h2 {
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.menu-item p {
+display: inline-block;
+margin-top: 5px;
+margin-bottom: 5px;
+font-size: 18px;
+}
+
+.menu-flavor, .menu-dessert {
+text-align: left;
+width: 75%;
+border-bottom: 1px solid black;
+
+}
+
+.menu-price {
+text-align: right;
+width: 25%;
+border-bottom: 1px solid black;
+}
+
+/* FOOTER */
+
+.menu footer {
+font-size: 14px;
+}
+
+.menu a {
+color: black;
+}
+
+.menu a:visited {
+color: black;
+}
+
+.menu a:hover {
+color: brown;
+}
+
+.menu a:active {
+color: brown;
+}
+
+.offer-banner{
+    background-color:black;
+    border-radius: 20px;
+    border-width:  2px;
+    border-color: yellow;
+    border-style: dashed;
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+}
+
+/* .marquee {
+	color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+} */
+
+
+.marquee {
+    width: 100%;
+  
+    overflow: hidden;
+    position: relative;
+
+    padding: 8px 0 4px 0;
+  }
+  
+  
+.marquee {
+height: 5vw;
+width: 100%;
+
+overflow: hidden;
+position: relative;
+padding: 8px 0 4px 0;
+}
+
+.marquee .marqueeone{
+animation: marquee 30s linear infinite
+}
+
+.marquee .marqueetwo{
+animation: marquee 30s linear 7.5s infinite 
+}
+
+.marquee .marqueethree{
+animation: marquee 30s linear 15s infinite
+}
+
+.marquee .marqueefour{
+animation: marquee 30s linear 23s infinite
+}
+
+
+.marquee div {
+position: absolute;
+width: 100%;
+left: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+.marquee:hover div {
+animation-play-state: paused;
+}
+
+@keyframes marquee {
+0% { left: 100%; }
+50% { left: -100%; }
+100% {left: -100%}
+}
+  
+.job-select{
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+}
+
+
